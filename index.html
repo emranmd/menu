@@ -345,13 +345,13 @@
                                                                 </div><!-- mushroomItemsButtonBox -->
                                                             </div><!-- mushroomItemsBox -->
 
-                                                            <div class="cafeLatteItemsBox">
+                                                            <div class="mushroomItemsBox">
                                                                 <div class="itemsImgBox">
                                                                     <img src="./assets/images/cafe1.jpeg">
                                                                 </div>
-                                                                <div class="itemsName_andButtonBox">
+                                                                <div class="mushroomItemsButtonBox">
                                                                     <div class="itemName">
-                                                                        <h5><span></span> chicken noodle soup</h5>
+                                                                        <h5><span></span>  chicken noodle soup</h5>
                                                                         <p><i class="fa-solid fa-dollar-sign"></i> 120.00</p>
                                                                     </div>
                                                                     <div class="itemsButton">
@@ -368,16 +368,16 @@
                                                                         </form>
                                                                         <h6><i class="fa-solid fa-dollar-sign"></i> 600.00</h6>
                                                                     </div><!-- itemsButton -->
-                                                                </div><!-- itemsName_andButtonBox -->
-                                                            </div><!-- cafeLatteItemsBox -->
+                                                                </div><!-- mushroomItemsButtonBox -->
+                                                            </div><!-- mushroomItemsBox -->
 
-                                                            <div class="saladItemsBox">
+                                                            <div class="mushroomItemsBox">
                                                                 <div class="itemsImgBox">
                                                                     <img src="./assets/images/salad.jpeg">
                                                                 </div>
-                                                                <div class="saladItemsButtonBox">
+                                                                <div class="mushroomItemsButtonBox">
                                                                     <div class="itemName">
-                                                                        <h5><span></span> Spiced Arugula and Feta Salad</h5>
+                                                                        <h5><span></span>  Spiced Arugula and Feta Salad</h5>
                                                                         <p><i class="fa-solid fa-dollar-sign"></i> 300.00</p>
                                                                     </div>
                                                                     <div class="itemsButton">
@@ -394,8 +394,8 @@
                                                                         </form>
                                                                         <h6><i class="fa-solid fa-dollar-sign"></i> 10500.00</h6>
                                                                     </div><!-- itemsButton -->
-                                                                </div><!-- saladItemsButtonBox -->
-                                                            </div><!-- saladItemsBox -->
+                                                                </div><!-- mushroomItemsButtonBox -->
+                                                            </div><!-- mushroomItemsBox -->
 
                                                         </div><!-- itemsNameAndPrice -->
                                                     </div><!-- itemsContainer -->
@@ -407,17 +407,17 @@
                                                             <ul>
                                                                 <li>
                                                                     <p>Subtotal</p>
-                                                                    <span>11340.00</span>
+                                                                    <span><i class="fa-solid fa-dollar-sign"></i> 11340.00</span>
                                                                 </li>
                                                                 <li>
                                                                     <p>Delivery Free</p>
-                                                                    <span>10.00</span>
-                                                                </li>
-                                                                <li class="text">
-                                                                    <p>Subtotal</p>
-                                                                    <span>11340.00</span>
+                                                                    <span><i class="fa-solid fa-dollar-sign"></i> 10.00</span>
                                                                 </li>
                                                             </ul>
+                                                            <div class="text">
+                                                                <p>TOTAL</p>
+                                                                <span><i class="fa-solid fa-dollar-sign"></i> 11350.00</span>
+                                                            </div>
                                                         </div>
                                                     </div><!-- accordion_ContentBox -->
                                                 </div><!-- itemsPriceDetails -->
@@ -425,43 +425,152 @@
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="tabsArea">
                                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                                                            </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="delivery-tab" data-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="true">DELIVERY</a>
+                                                        </li>
 
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                                                            </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="pickup-tab" data-toggle="tab" href="#pickup" role="tab" aria-controls="pickup" aria-selected="false">PICKUP</a>
+                                                        </li>
 
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                                                            </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="dinein-tab" data-toggle="tab" href="#dinein" role="tab" aria-controls="dinein" aria-selected="false">DINE IN</a>
+                                                        </li>
                                                     </ul>
                                                     <div class="tab-content" id="myTabContent">
-                                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
+                                                        <div class="tab-pane fade show active" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+                                                            <div class="tabFormWrp">
+                                                                <div class="tabFormWrp_tittle">
+                                                                    <p>Special instructons (optional)</p>
+                                                                </div>
+                                                                <form action="">
+                                                                    <div class="writingArea">
+                                                                        <label for="examplewriteinput" class="form-label"></label>
+                                                                        <textarea id="examplewriteinput" class="tabFormStyle" rows="1" placeholder="Write here..."></textarea>
+                                                                        <button>
+                                                                            <span><i class="fa-regular fa-envelope"></i></span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inputNameArea">
+                                                                        <label for="exampleFullNameinput" class="form-label"></label>
+                                                                        <input type="name" class="form-control inputNameStyle" id="exampleFullNameinput" placeholder="Full Name">
+                                                                    </div>
+                                                                    <div class="inputNameArea">
+                                                                        <label for="exampleNumberinput" class="form-label"></label>
+                                                                        <input type="number" class="form-control inputNameStyle" id="exampleNumberinput" placeholder="Phone/Mobile No.">
+                                                                    </div>
+                                                                    <div class="inputAddressArea">
+                                                                        <label for="exampleaddressinput" class="form-label"></label>
+                                                                        <textarea id="exampleaddressinput" class="addressFormStyle" rows="2" placeholder="Address"></textarea>
+                                                                    </div>
+                                                                    <div class="selectForm">
+                                                                        <select class="form-control selectForm_style">
+                                                                            <option>Street 1</option>
+                                                                            <option>Street 2</option>
+                                                                            <option>Street 3</option>
+                                                                            <option>Street 4</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </form>
+                                                                <div class="continuwButton">
+                                                                    <a href="#" class="btn">
+                                                                        <p><i class="fa-brands fa-whatsapp"></i> CONTINUW</p>
+                                                                    </a>
+                                                                </div>
+                                                            </div><!-- tabFormWrp -->
                                                         </div>
-                                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                                            
+                                                        <div class="tab-pane fade" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+                                                            <div class="tabFormWrp">
+                                                                <div class="tabFormWrp_tittle">
+                                                                    <p>Special instructons (optional)</p>
+                                                                </div>
+                                                                <form action="">
+                                                                    <div class="writingArea">
+                                                                        <label for="examplewriteinput" class="form-label"></label>
+                                                                        <textarea id="examplewriteinput" class="tabFormStyle" rows="1" placeholder="Write here..."></textarea>
+                                                                        <button>
+                                                                            <span><i class="fa-regular fa-envelope"></i></span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inputNameArea">
+                                                                        <label for="exampleFullNameinput" class="form-label"></label>
+                                                                        <input type="name" class="form-control inputNameStyle" id="exampleFullNameinput" placeholder="Full Name">
+                                                                    </div>
+                                                                    <div class="inputNameArea">
+                                                                        <label for="exampleNumberinput" class="form-label"></label>
+                                                                        <input type="number" class="form-control inputNameStyle" id="exampleNumberinput" placeholder="Phone/Mobile No.">
+                                                                    </div>
+                                                                    <div class="inputAddressArea">
+                                                                        <label for="exampleaddressinput" class="form-label"></label>
+                                                                        <textarea id="exampleaddressinput" class="addressFormStyle" rows="2" placeholder="Address"></textarea>
+                                                                    </div>
+                                                                    <div class="selectForm">
+                                                                        <select class="form-control selectForm_style">
+                                                                            <option>Pickup 1</option>
+                                                                            <option>Pickup 2</option>
+                                                                            <option>Pickup 3</option>
+                                                                            <option>Pickup 4</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </form>
+                                                                <div class="continuwButton">
+                                                                    <a href="#" class="btn">
+                                                                        <p><i class="fa-brands fa-whatsapp"></i> CONTINUW</p>
+                                                                    </a>
+                                                                </div>
+                                                            </div><!-- tabFormWrp -->
                                                         </div>
-                                                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                                            
+                                                        <div class="tab-pane fade" id="dinein" role="tabpanel" aria-labelledby="dinein-tab">
+                                                            <div class="tabFormWrp">
+                                                                <div class="tabFormWrp_tittle">
+                                                                    <p>Special instructons (optional)</p>
+                                                                </div>
+                                                                <form action="">
+                                                                    <div class="writingArea">
+                                                                        <label for="examplewriteinput" class="form-label"></label>
+                                                                        <textarea id="examplewriteinput" class="tabFormStyle" rows="1" placeholder="Write here..."></textarea>
+                                                                        <button>
+                                                                            <span><i class="fa-regular fa-envelope"></i></span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="inputNameArea">
+                                                                        <label for="exampleFullNameinput" class="form-label"></label>
+                                                                        <input type="name" class="form-control inputNameStyle" id="exampleFullNameinput" placeholder="Full Name">
+                                                                    </div>
+                                                                    <div class="inputNameArea">
+                                                                        <label for="exampleNumberinput" class="form-label"></label>
+                                                                        <input type="number" class="form-control inputNameStyle" id="exampleNumberinput" placeholder="Phone/Mobile No.">
+                                                                    </div>
+                                                                    <div class="inputAddressArea">
+                                                                        <label for="exampleaddressinput" class="form-label"></label>
+                                                                        <textarea id="exampleaddressinput" class="addressFormStyle" rows="2" placeholder="Address"></textarea>
+                                                                    </div>
+                                                                    <div class="selectForm">
+                                                                        <select class="form-control selectForm_style">
+                                                                            <option>Dine in 1</option>
+                                                                            <option>Dine in 2</option>
+                                                                            <option>Dine in 3</option>
+                                                                            <option>Dine in 4</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </form>
+                                                                <div class="continuwButton">
+                                                                    <a href="#" class="btn">
+                                                                        <p><i class="fa-brands fa-whatsapp"></i> CONTINUW</p>
+                                                                    </a>
+                                                                </div>
+                                                            </div><!-- tabFormWrp -->
                                                         </div>
                                                     </div>
                                                 </div><!-- tabsArea -->
                                             </div>
                                         </div>
                                     </div><!-- modal-body -->
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
                                 </div><!-- modal-content -->
                             </div><!-- modal-dialog -->
                         </div><!-- modal -->
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                        
                     </div>
                 </div>
             </div><!-- container -->
@@ -469,6 +578,17 @@
     </main>
 
     
+    <!-- Accordion Link -->
+    <script>
+        const accordion = document.getElementsByClassName('accordion_ContentBox');
+        
+        for (i = 0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+
     <!-- Jquery Link -->
 
     

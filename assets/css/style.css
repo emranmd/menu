@@ -1071,7 +1071,11 @@
     background: rgb(255 255 255 / 59%);
 }
 .shopItems_section .modal .modal-dialog {
-    max-width: 90% !important;
+    max-width: 85% !important;
+}
+
+.modal-content .modal-body {
+    padding-bottom: 40px;
 }
 .modalButoonStyle {
     width: 100%;
@@ -1175,100 +1179,7 @@
     width: 100%;
 }
 
-.itemsNameAndPrice .cafeLatteItemsBox {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-    border-bottom: 1px solid #d8d2d2;
-}
-.cafeLatteItemsBox .itemsImgBox img {
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-}
-.itemsName_andButtonBox .itemName h5 {
-    margin: 0;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-.itemsName_andButtonBox .itemName span {
-    width: 10px;
-    height: 10px;
-    position: relative;
-    display: inline-block;
-    border-radius: 3px;
-    border: 1.4px solid #00aa71;
-}
-.itemsName_andButtonBox .itemName span:after {
-    position: absolute;
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #00aa71;
-    top: 17%;
-    left: 13%;
-}
-.itemsName_andButtonBox .itemName p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 9px;
-    line-height: 20px;
-    color: #716c6c;
-}
-.cafeLatteItemsBox .itemsName_andButtonBox {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
-
-.itemsNameAndPrice .saladItemsBox {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-    border-bottom: 1px solid #d8d2d2;
-}
-.saladItemsBox .itemsImgBox img {
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-}
-.saladItemsButtonBox .itemName h5 {
-    margin: 0;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-.saladItemsButtonBox .itemName span {
-    width: 10px;
-    height: 10px;
-    position: relative;
-    display: inline-block;
-    border-radius: 3px;
-    border: 1.4px solid #00aa71;
-}
-.saladItemsButtonBox .itemName span:after {
-    position: absolute;
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #00aa71;
-    top: 17%;
-    left: 13%;
-}
-.saladItemsButtonBox .itemName p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 9px;
-    line-height: 20px;
-    color: #716c6c;
-}
-.saladItemsBox .saladItemsButtonBox {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 .itemsButton .inputButton .pieceButton {
     height: 22px;
     width: 22px;
@@ -1340,9 +1251,239 @@
     padding-right: 1px;
 }
 
+.itemsPriceDetails .accordion_ContentBox {
+    position: relative;
+    margin-top: 30px;
+}
+.accordion_ContentBox .accordionTittle{
+    position: relative;
+    background: #2388F2;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 4px;
 
+}
+.accordion_ContentBox .accordionTittle h6 {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+}
+.accordion_ContentBox .accordionTittle i {
+    font-size: 10px;
+    background: white;
+    color: #007cff;
+    padding: 4px 5px;
+    border-radius: 50%;
+    border-style: dashed;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.accordion_ContentBox .accordionTittle::before {
+    position: absolute;
+    content: '>';
+    top: 50%;
+    right: 20px;
+    transform: translateY(-57%);
+    font-size: 1.5rem;
+}
+.accordion_ContentBox .accordionText ul {
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 1.5px solid #d6d6d6;
+}
+.accordion_ContentBox .accordionText ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion_ContentBox .accordionText ul li p {
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6a6a6a;
+    line-height: 30px;
+}
+.accordion_ContentBox .accordionText ul li span {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+}
+.accordion_ContentBox .accordionText .text p {
+    margin: 0;
+    font-size: 20px;
+}
+.accordion_ContentBox .accordionText .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.accordion_ContentBox .accordionText .text p {
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.accordion_ContentBox .accordionText .text span {
+    font-weight: 600;
+    font-family: 'Noto Sans JP';
+}
+.accordion_ContentBox .accordionText {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 0 10px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 0;
+    transition: all .3s ease-in-out;
+}
+.accordion_ContentBox.active .accordionText {
+    height: 150px;
+    border: 1.5px solid #a2a2a26b;
+}
+.accordion_ContentBox.active .accordionTittle{
+    box-shadow: 0 0 20px #22ff62a3;
+}
+.accordion_ContentBox.active .accordionTittle::before {
+    transform: rotate(90deg);
+    top: 17%;
+}
 
 /*-- itemsPriceDetails end--*/
+
+/*-- tabsArea start--*/
+
+.modal-body .tabsArea {
+    background: #dddddd59 !important;
+    padding: 15px;
+    border: 1.5px solid #8f8f8f5e !important;
+    border-radius: 5px;
+    padding-bottom: 38px;
+    box-shadow: 0 5px 15px #00000017;
+}
+.tabsArea .nav-tabs {
+    background: #fff;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 5px;
+    padding: 2px 4px;
+    border-bottom: none;
+    box-shadow: 0 0 10px #dee2e6;
+}
+.tabsArea .nav-tabs .nav-link {
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    color: #0021c3;
+    font-weight: 500;
+    letter-spacing: .4px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #001fbb;
+    padding: 5px 15px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+.tab-content .tabFormWrp {
+    margin-top: 20px;
+}
+.tabFormWrp .tabFormWrp_tittle p {
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.tabFormWrp .writingArea{
+    position: relative;
+}
+.tabFormWrp .writingArea .tabFormStyle {
+    width: 100%;
+    padding-left: 45px;
+    background: white;
+    border: 1px solid #0000003b;
+    border-radius: 6px 0 0 6px;
+    font-size: 12px;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    box-shadow: 0 2px 4px #00000033;
+    margin-top: -14px;
+}
+.tabFormWrp .writingArea button {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    border-right: 1px solid #00000036 !important;
+    height: 38px;
+    width: 36px;
+    border-radius: 6px 0 0 6px;
+    font-size: 15px;
+    color: #736c6c;
+    border: none;
+}
+.tabFormWrp .inputNameArea .inputNameStyle {
+    border: 1px solid #0000003b;
+    outline: none;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    box-shadow: 0 2px 4px #00000033;
+    padding: 9px 12px;
+    margin-top: -10px;
+}
+.tabFormWrp .inputAddressArea .addressFormStyle {
+    width: 100%;
+    border: 1px solid #0000003b;
+    outline: none;
+    font-size: 12px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    box-shadow: 0 2px 4px #00000033;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-top: -8px;
+}
+.tabFormWrp .continuwButton p i {
+    font-size: 16px;
+    padding-right: 8px;
+}
+.tabFormWrp .continuwButton p {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding: 5px 185px;
+}
+.tabFormWrp .continuwButton {
+    text-align: center;
+    background: #73d896;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.tabFormWrp .selectForm {
+    margin-top: 10px;
+}
+.selectForm .selectForm_style {
+    border: 1px solid #00000026;
+    outline: none;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px #00000033;
+    color: #000000b0;
+    font-family: 'Noto Sans JP';
+    padding: 0 6px;
+    border-radius: 6px;
+}
+/*-- tabsArea end--*/
 
 
 
