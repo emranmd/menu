@@ -1,0 +1,156 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .modalButoonStyle {
+      width: 90%;
+  }
+  .modal-dialog {
+    max-width: 97%;
+  }
+   
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .reviewTop_menuBodyContainer .cafeShope_imageBox img {
+        width: 390px;
+        height: 215px;
+    }
+    .reviewTop_menuBodyContainer .logoAndContent {
+        gap: 0px;
+        flex-direction: column;
+    }
+    .logoAndContent .cafeName_andLocation p {
+        line-height: 15px;
+        font-weight: 500;
+    }
+    .logoAndContent .cafeName_andLocation h5 {
+        font-weight: 700;
+        line-height: 35px;
+    }
+    .reviewTop_menuBodyContainer .cafeTimeContent {
+        padding-left: 0;
+    }
+    .reviewTop_menuBodyContainer .cafeTimeContent p {
+        font-size: 9px;
+    }
+    .modalButoonStyle {
+        width: 90%;
+    }
+    .shopItems_rowStart {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 30px;
+  }
+    
+  }
+
+  @media only screen and (max-width: 767px) {
+
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    
+    .shopItems_rowStart{
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+      }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .reviewTop_menuArea .reviewTop_menuBodyContainer {
+        gap: 5px;
+        justify-content: space-between;
+    }
+    .reviewTop_menuBodyContainer .cafeTimeContent {
+        padding-left: 0;
+    }
+    .reviewTop_menuBodyContainer .cafeTimeContent p {
+        font-size: 7px;
+        padding: 4px 5px;
+        border-radius: 4px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .reviewTop_menuBodyContainer .logoAndContent {
+        display: flow-root;
+    }
+    .logoAndContent .cafeName_andLocation h5 {
+        font-size: 24px;
+        line-height: 35px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    .reviewTop_menuBodyContainer .cafeShope_imageBox img {
+        width: 160px;
+        height: 177px;
+    }
+    .logoAndContent .cafeName_andLocation p {
+        font-size: 10px;
+        letter-spacing: .1px;
+        line-height: 13px;
+        font-weight: 500;
+        text-shadow: none;
+    }
+    .modal-body .tabsArea {
+        margin-top: 15px;
+    }
+    .tabFormWrp .continuwButton p {
+        padding: 5px 107px;
+    }
+    .modalButoonStyle {
+        width: 93%;
+    }
+    .shopItems_rowStart{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    }
+
+  }
